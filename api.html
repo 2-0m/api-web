@@ -21,6 +21,7 @@
 <style>
     body { 
         background:antiquewhite;
+        background-color: lightblue;
         font-family: Arial, sans-serif;
     }
     .container {
@@ -148,4 +149,8 @@
             return false;
         }
     }
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ff0000');
+    });
+
 </script>
