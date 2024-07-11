@@ -1,4 +1,4 @@
-"""
+
 <center> 
     <div class="container">
         <div class="hamburger" onclick="toggleSidebar()">
@@ -150,4 +150,4 @@
             return false;
         }
     }
-</script>"""
+</script>
