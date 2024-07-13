@@ -11,11 +11,17 @@
         </div>
         <div class="content">
             <img src="https://i.giphy.com/media/3o7abAHdYvZdBNnGZq/giphy.webp" class="circular-image"/> 
-            <p class="text">Mustafa Abbas</p>
+            <p class="text">Mustafa Abbas</p> 
             <a href="https://t.me/GTT_G" class="button-link">
                 <button class="button">Coder</button>
             </a>
         </div>
+    </div>
+    <div class="description-container">
+        <h2 class="title">{{ title }}</h2>
+        <hr class="title-underline">
+        <p class="description">{{ caption }}</p>
+        
     </div>
 </center> 
 <style>
@@ -113,6 +119,26 @@
     .button:active {
         background-color: red;
     }
+    .description-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .title {
+        font-size: 24px;
+        color: #333;
+        margin: 0;
+    }
+    .title-underline {
+        width: 70%;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 2px solid #333;
+    }
+    .description {
+        font-size: 16px;
+        color: #333;
+        margin-top: 5px;
+    }
 </style>
 <script>
     function toggleSidebar() {
@@ -135,7 +161,7 @@
         if (event.keyCode == 123) {
             return false;
         }
-       if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
             return false;
         }
         if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
@@ -148,5 +174,4 @@
             return false;
         }
     }
-
 </script>
